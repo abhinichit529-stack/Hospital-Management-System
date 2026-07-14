@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: doctor-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/doctor_db?useSSL=false&serverTimezone=UTC
+    username: hospital_user
+    password: hospital_pass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

@@ -1,0 +1,17 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: billing-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/billing_db?useSSL=false&serverTimezone=UTC
+    username: hospital_user
+    password: hospital_pass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
